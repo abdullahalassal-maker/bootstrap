@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-shopping-bag"></i> متجرى
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">المنتجات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">العروض</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2">
+                <input class="form-control search-box" type="search" placeholder="ابحث عن منتج" style="max-width: 250px;">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="btn position-relative">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="cart-badge">3</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-user fa-lg"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Slider Section -->
+<section class="hero-section">
+    <div id="herocarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#herocarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+
+            <!-- Slider 1 -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-lg-end text-center">
+                            <h1 class="display-4 fw-bold">أحدث اللابتوبات الجيمينج</h1>
+                            <p>احصل على أفضل تجربة ألعاب مع أحدث اللابتوبات</p>
+                            <button class="btn btn-primary btn-lg">
+                                <i class="fas fa-tag"></i> تسوق الآن
+                            </button>
+                            <button class="btn btn-outline-light btn-lg ms-2">
+                                اعرف المزيد
+                            </button>
+                        </div>
+                        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                            <i class="fas fa-laptop slider-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-lg-end text-center">
+                            <h1 class="display-4 fw-bold">هواتف ذكية بتقنية 5G</h1>
+                            <p>اكتشف عالم السرعة الفائقة مع أحدث هواتفنا</p>
+                            <button class="btn btn-primary btn-lg">
+                                <i class="fas fa-mobile-alt"></i> اطلب الآن
+                            </button>
+                            <button class="btn btn-outline-light btn-lg ms-2">
+                                عروض خاصة
+                            </button>
+                        </div>
+                        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                            <i class="fas fa-mobile-alt slider-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-lg-end text-center">
+                            <h1 class="display-4 fw-bold">خصومات تصل إلى 40%</h1>
+                            <p>عروض حصرية على جميع الإكسسوارات</p>
+                            <button class="btn btn-primary btn-lg">
+                                <i class="fas fa-fire"></i> اغتنم الفرصة
+                            </button>
+                            <button class="btn btn-outline-light btn-lg ms-2">
+                                كل العروض
+                            </button>
+                        </div>
+                        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                            <i class="fas fa-headphones slider-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#herocarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#herocarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="product-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold"> منتجاتنا المميزة</h2>
+            <p class="text-muted"> اختر من بين مجموعة واسعه من المنتجات عالية الجودة</p>
+        </div>
+        <div class="row g-4">
+
+            <!--product 1-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <span class="badge-discount">20% خصم</span>
+                    <div class="product-image">
+                        <i class="fa fa-laptop fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge"> اجهزة الحاسوب</span>
+                        <h5 class="card-title fw-bold"> لاب توب جيمنج احترافى</h5>
+                        <p class="card-text-muted"> كارت شاشة RTX 3063, ذاكرة 16GB , معالج Intel Core i7 </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">4,500 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--product 2-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <div class="product-image">
+                        <i class="fa fa-mobile-screen fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge"> هواتف ذكية </span>
+                        <h5 class="card-title fw-bold">هانف ذكي متطور</h5>
+                        <p class="card-text-muted">شاشة AMOLED 6.7 بوصه ، كاميرا 108MP ، بطارية 5000mAh </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">2,800 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--product 3-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <span class="badge-discount">15% خصم</span>
+                    <div class="product-image">
+                        <i class="fa fa-headphones fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge"> إكسسورات</span>
+                        <h5 class="card-title fw-bold">سماعة لاسلكية</h5>
+                        <p class="card-text-muted"> الغاء الضوضاء نشط،عمر البطارية 30 ساعه،صوت عالي الجودة </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">650 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--product 4-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <div class="product-image">
+                        <i class="fa fa-tablet fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge"> اجهزة لوحية</span>
+                        <h5 class="card-title fw-bold">تابلت للعمل والترفيه</h5>
+                        <p class="card-text-muted"> شاشة 11 بوصة، معالج قوي، دعم القلم الذكي </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">1,900 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--product 5-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <span class="badge-discount">30% خصم</span>
+                    <div class="product-image">
+                        <i class="fa fa-camera fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge">كاميرات</span>
+                        <h5 class="card-title fw-bold"> كاميرا رقمية احترافية</h5>
+                        <p class="card-text-muted">دقة 24MP،تصوير فيديو 4K،شاشة قابلة للطي</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">3,200 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--product 6-->
+            <div class="col-lg-4 col-md-6">
+                <div class="card product-card">
+                    <div class="product-image">
+                        <i class="fa fa-tv fa-flip"></i>
+                    </div>
+                    <div class="card-body">
+                        <span class="category-badge"> شاشات وتلفزيونات</span>
+                        <h5 class="card-title fw-bold">شاشة ذكية 4K</h5>
+                        <p class="card-text-muted">55 بوصة ، تقنية HDR ، نظام أندرويد مدمج </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="product-price">2,400 ج.م </span>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-cart-plus"></i>أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4 mb-4">
+                <h5 class="fw-bold mb-3">
+                    <i class="fas fa-shopping-bag"></i>متجري
+                </h5>
+                <p class="text">متجرك الموثوق للألكترونيات والتكونولجيا ، نقدم افضل المنتجات بأسعار تنافسية</p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">روابط سريعة </h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="footer-link"> من نحن</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link"> المنتجات</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link"> العروض</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">خدمة العملاء</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="footer-link">الشحن والتوصيل</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">الاسترجاع والاستيدال</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">الاسئلة الشائعة</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">الدهم الفنيا</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 mb-4">
+                <h6 class="fw-bold mb-3">تواصل معنا</h6>
+                <p class="text"><i class="fas fa-envelope ms-2"></i> info@mystore.com</p>
+                <p class="text"><i class="fas fa-phone ms-2"></i> 01100082126</p>
+            </div>
+
+            <div class="mt-3">
+                <a href="#" class="text-white ms-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white ms-3"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-white ms-3"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="mt-4 mb-3" style="border-color: red;opacity: .1;">
+
+    <div class="text-center">
+        <div class="mb-0">متجري ، جميع الحقوق محفوظة 2025</div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
